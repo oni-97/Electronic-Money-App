@@ -19,6 +19,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.androidenshugroup2.PurchaseItemActivity"
+            android:label="@string/purchase_activity_name">
+        </activity>
+        <activity
+            android:name="com.example.androidenshugroup2.PurchaseByGenreActivity">
+        </activity>
     </application>
 
 </manifest>

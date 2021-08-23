@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">AndroidEnshuGroup2</string>
 
-    //purchase_item_activity
+    <!-- purchase_item_activity -->
+    <string name="purchase_activity_name">商品購入</string>
     <string name="juice">ジュース</string>
     <string name="snack">お菓子</string>
     <string name="ice">アイス</string>

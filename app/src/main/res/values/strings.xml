@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">AndroidEnshuGroup2</string>
+
+    //purchase_item_activity
+    <string name="juice">ジュース</string>
+    <string name="snack">お菓子</string>
+    <string name="ice">アイス</string>
+    <string name="noodle">カップ麺</string>
+    <string name="coffee_tea">コーヒー＆紅茶</string>
+    <string name="others">その他</string>
+    <string name="return_txt">戻る</string>
 </resources>

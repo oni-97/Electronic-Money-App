@@ -24,7 +24,7 @@ public class PurchaseByGenreActivity extends AppCompatActivity {
         //遷移元のアクティビティから「ジャンル (String型)」を受け取る。
         //タイトルをジャンルに応じて設定
         Intent intentMain = getIntent();
-        genre = intentMain.getStringExtra(PurchaseItemActivity.EXTRA_GENRE);
+        genre = intentMain.getStringExtra(PurchaseItemActivity.EXTRA_MESSAGE);
         String title = makeTitleString(genre);
         setTitle("商品購入 > " + title);
 
@@ -82,5 +82,12 @@ public class PurchaseByGenreActivity extends AppCompatActivity {
     public void updateItemRecyclerView(List<ItemData> itemDataList) {
         ItemRecyclerAdapter adapter = new ItemRecyclerAdapter(itemDataList, this);
         recyclerView.setAdapter(adapter);
+    }
+
+    public void completePurchase() {
+        Intent intent = new Intent();
+        intent.putExtra(PurchaseItemActivity.EXTRA_MESSAGE, "purchase_complete");
+        setResult(RESULT_OK, intent);
+        this.finish();
     }
 }

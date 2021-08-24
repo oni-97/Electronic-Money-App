@@ -4,12 +4,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class PurchaseItemActivity extends AppCompatActivity {
 
-    public static final String EXTRA_GENRE
-            = "com.example.androidenshugroup2.GENRE";
+    public static final String EXTRA_MESSAGE
+            = "com.example.androidenshugroup2.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,8 +43,22 @@ public class PurchaseItemActivity extends AppCompatActivity {
         //クリックされたジャンルのページに遷移
         //遷移先のアクティビティに「ジャンル (String型)」を渡す
         Intent intent = new Intent(getApplication(), PurchaseByGenreActivity.class);
-        intent.putExtra(EXTRA_GENRE, genre);
-        startActivity(intent);
+        intent.putExtra(EXTRA_MESSAGE, genre);
+        mStartForResult.launch(intent);
     }
+
+    private ActivityResultLauncher<Intent> mStartForResult = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
+            new ActivityResultCallback<ActivityResult>() {
+                @Override
+                public void onActivityResult(ActivityResult result) {
+                    if (result.getResultCode() == PurchaseItemActivity.RESULT_OK) {
+                        Intent intent = result.getData();
+                        String message = intent.getStringExtra(PurchaseItemActivity.EXTRA_MESSAGE);
+                        if (message.equals("purchase_complete")) {
+                            finish();
+                        }
+                    }
+                }
+            });
 
 }

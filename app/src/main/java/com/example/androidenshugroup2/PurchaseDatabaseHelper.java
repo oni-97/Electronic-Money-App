@@ -2,6 +2,7 @@ package com.example.androidenshugroup2;
 
 import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -56,6 +57,12 @@ public class PurchaseDatabaseHelper extends AppCompatActivity {
                 .setMessage(data.getItemName() + " " + data.getPurchasePrice() + " 円 "
                         + "の購入が完了しました。")
                 .setPositiveButton("OK", null)
+                .setOnDismissListener(new DialogInterface.OnDismissListener() {
+                    @Override
+                    public void onDismiss(DialogInterface dialog) {
+                        pbgActivity.completePurchase();
+                    }
+                })
                 .show();
     }
 

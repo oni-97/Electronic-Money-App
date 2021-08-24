@@ -43,4 +43,8 @@ dependencies {
 
     //for ThreeTenABP
     implementation 'com.jakewharton.threetenabp:threetenabp:1.2.1'
+
+    //for Activity Result API
+    def activity_version = "1.2.3"
+    implementation "androidx.activity:activity:$activity_version"
 }

@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class PurchaseItemActivity extends AppCompatActivity {
 
     public static final String EXTRA_GENRE
-            = "com.example.purchase_item.GENRE";
+            = "com.example.androidenshugroup2.GENRE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

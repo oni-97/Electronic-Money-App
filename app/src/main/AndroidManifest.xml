@@ -21,10 +21,14 @@
         </activity>
         <activity
             android:name="com.example.androidenshugroup2.PurchaseItemActivity"
-            android:label="@string/purchase_activity_name">
+            android:label="@string/purchase_item_activity_name">
         </activity>
         <activity
             android:name="com.example.androidenshugroup2.PurchaseByGenreActivity">
+        </activity>
+        <activity
+            android:name="com.example.androidenshugroup2.MyPageActivity"
+            android:label="@string/my_page_activity_name">
         </activity>
     </application>
 

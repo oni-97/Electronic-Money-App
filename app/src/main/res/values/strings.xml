@@ -2,7 +2,7 @@
     <string name="app_name">AndroidEnshuGroup2</string>
 
     <!-- purchase_item_activity -->
-    <string name="purchase_activity_name">商品購入</string>
+    <string name="purchase_item_activity_name">商品購入</string>
     <string name="juice">ジュース</string>
     <string name="snack">お菓子</string>
     <string name="ice">アイス</string>
@@ -10,4 +10,12 @@
     <string name="coffee_tea">コーヒー＆紅茶</string>
     <string name="others">その他</string>
     <string name="return_txt">戻る</string>
+
+    <!-- my_page_activity -->
+    <string name="my_page_activity_name">商品購入</string>
+    <string name="purchase_item">商品購入</string>
+    <string name="logout">ログアウト</string>
+    <string name="purchase_history">購入履歴</string>
+    <string name="setting">設定</string>
+    <string name="register_item_for_juicekai">商品登録\n（ジュース会担当用）</string>
 </resources>

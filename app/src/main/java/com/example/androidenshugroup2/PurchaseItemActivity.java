@@ -33,7 +33,7 @@ public class PurchaseItemActivity extends AppCompatActivity {
         iceBtn.setOnClickListener(v -> moveToClickedGenre("ice"));
         Button noodleBtn = findViewById(R.id.noodle_btn);
         noodleBtn.setOnClickListener(v -> moveToClickedGenre("noodle"));
-        Button coffeeBtn = findViewById(R.id.coffee_btn);
+        Button coffeeBtn = findViewById(R.id.mv_register_item_btn);
         coffeeBtn.setOnClickListener(v -> moveToClickedGenre("coffee"));
         Button othersBtn = findViewById(R.id.others_btn);
         othersBtn.setOnClickListener(v -> moveToClickedGenre("others"));

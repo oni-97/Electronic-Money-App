@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PurchaseItemActivity">
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,12 +20,17 @@
             android:layout_height="wrap_content"
             android:layout_weight="2" />
 
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
         <Button
-            android:id="@+id/juice_btn"
+            android:id="@+id/mv_purchase_item_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="3"
-            android:text="@string/juice" />
+            android:text="@string/purchase_item" />
 
         <Space
             android:layout_width="wrap_content"
@@ -33,11 +38,11 @@
             android:layout_weight="1" />
 
         <Button
-            android:id="@+id/snack_btn"
+            android:id="@+id/mv_purchase_history_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="3"
-            android:text="@string/snack" />
+            android:text="@string/purchase_history" />
 
         <Space
             android:layout_width="wrap_content"
@@ -45,23 +50,11 @@
             android:layout_weight="1" />
 
         <Button
-            android:id="@+id/ice_btn"
+            android:id="@+id/mv_setting_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="3"
-            android:text="@string/ice" />
-
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-        <Button
-            android:id="@+id/noodle_btn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:text="@string/noodle" />
+            android:text="@string/setting" />
 
         <Space
             android:layout_width="wrap_content"
@@ -73,7 +66,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="3"
-            android:text="@string/coffee_tea" />
+            android:text="@string/register_item_for_juicekai" />
 
         <Space
             android:layout_width="wrap_content"
@@ -81,36 +74,16 @@
             android:layout_weight="1" />
 
         <Button
-            android:id="@+id/others_btn"
+            android:id="@+id/mv_logout_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="3"
-            android:text="@string/others" />
+            android:text="@string/logout" />
 
         <Space
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="2" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:orientation="horizontal">
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
-            <Button
-                android:id="@+id/return_btn"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="@string/return_txt" />
-
-        </LinearLayout>
 
         <Space
             android:layout_width="wrap_content"

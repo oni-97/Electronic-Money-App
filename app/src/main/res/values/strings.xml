@@ -12,7 +12,7 @@
     <string name="return_txt">戻る</string>
 
     <!-- my_page_activity -->
-    <string name="my_page_activity_name">商品購入</string>
+    <string name="my_page_activity_name">マイページ</string>
     <string name="purchase_item">商品購入</string>
     <string name="logout">ログアウト</string>
     <string name="purchase_history">購入履歴</string>

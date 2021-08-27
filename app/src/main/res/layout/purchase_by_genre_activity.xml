@@ -43,6 +43,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="20sp"
             android:text="@string/return_txt" />
 
     </LinearLayout>

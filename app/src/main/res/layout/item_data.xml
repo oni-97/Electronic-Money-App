@@ -18,6 +18,8 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="8dp"
             android:layout_weight="2"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="20sp"
             android:gravity="center_vertical" />
 
         <TextView
@@ -26,6 +28,8 @@
             android:layout_height="match_parent"
             android:layout_marginRight="8dp"
             android:layout_weight="1"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="20sp"
             android:gravity="right|center_vertical" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

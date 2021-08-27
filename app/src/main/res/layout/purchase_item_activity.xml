@@ -25,6 +25,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="3"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="20sp"
             android:text="@string/juice" />
 
         <Space
@@ -37,6 +39,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="3"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="20sp"
             android:text="@string/snack" />
 
         <Space
@@ -49,6 +53,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="3"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="20sp"
             android:text="@string/ice" />
 
         <Space
@@ -61,6 +67,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="3"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="20sp"
             android:text="@string/noodle" />
 
         <Space
@@ -73,6 +81,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="3"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="20sp"
             android:text="@string/coffee_tea" />
 
         <Space
@@ -85,6 +95,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="3"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="20sp"
             android:text="@string/others" />
 
         <Space
@@ -108,6 +120,8 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMaxTextSize="20sp"
                 android:text="@string/return_txt" />
 
         </LinearLayout>

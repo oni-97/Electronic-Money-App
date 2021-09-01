@@ -23,7 +23,7 @@ public class ItemDatabaseHelper extends AppCompatActivity {
         this.pbgActivity = activity;
     }
 
-    public void getDataAndUpdateRecyclerView(String genre) {
+    public void getDataAndUpdateRecyclerView() {
         isGetDataSuccess = false;
         ExecutorService executor = Executors.newSingleThreadExecutor();
         //データベース関連は非同期処理で行う

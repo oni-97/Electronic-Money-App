@@ -26,17 +26,17 @@ public class PurchaseItemActivity extends AppCompatActivity {
 
         //「ジャンル」ボタン
         Button juiceBtn = findViewById(R.id.juice_btn);
-        juiceBtn.setOnClickListener(v -> moveToClickedGenre("juice"));
+        juiceBtn.setOnClickListener(v -> moveToClickedGenre("ジュース"));
         Button snackBtn = findViewById(R.id.snack_btn);
-        snackBtn.setOnClickListener(v -> moveToClickedGenre("snack"));
+        snackBtn.setOnClickListener(v -> moveToClickedGenre("お菓子"));
         Button iceBtn = findViewById(R.id.ice_btn);
-        iceBtn.setOnClickListener(v -> moveToClickedGenre("ice"));
+        iceBtn.setOnClickListener(v -> moveToClickedGenre("アイス"));
         Button noodleBtn = findViewById(R.id.noodle_btn);
-        noodleBtn.setOnClickListener(v -> moveToClickedGenre("noodle"));
+        noodleBtn.setOnClickListener(v -> moveToClickedGenre("カップ麺"));
         Button coffeeBtn = findViewById(R.id.mv_register_item_btn);
-        coffeeBtn.setOnClickListener(v -> moveToClickedGenre("coffee"));
+        coffeeBtn.setOnClickListener(v -> moveToClickedGenre("コーヒー"));
         Button othersBtn = findViewById(R.id.others_btn);
-        othersBtn.setOnClickListener(v -> moveToClickedGenre("others"));
+        othersBtn.setOnClickListener(v -> moveToClickedGenre("その他"));
     }
 
     private void moveToClickedGenre(String genre) {

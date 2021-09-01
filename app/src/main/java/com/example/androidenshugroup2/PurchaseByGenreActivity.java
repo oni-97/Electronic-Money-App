@@ -25,8 +25,7 @@ public class PurchaseByGenreActivity extends AppCompatActivity {
         //タイトルをジャンルに応じて設定
         Intent intentMain = getIntent();
         genre = intentMain.getStringExtra(PurchaseItemActivity.EXTRA_MESSAGE);
-        String title = makeTitleString(genre);
-        setTitle("商品購入 > " + title);
+        setTitle("商品購入 > " + genre);
 
         //「戻る」ボタン
         Button returnButton = findViewById(R.id.return_btn);
@@ -41,34 +40,7 @@ public class PurchaseByGenreActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(rLayoutManager);
 
         ItemDatabaseHelper itemDatabaseHelper = new ItemDatabaseHelper(getApplicationContext(), this);
-        itemDatabaseHelper.getDataAndUpdateRecyclerView(genre);
-    }
-
-    private String makeTitleString(String genre) {
-        String title;
-        switch (genre) {
-            case "juice":
-                title = "ジュース";
-                break;
-            case "snack":
-                title = "お菓子";
-                break;
-            case "ice":
-                title = "アイス";
-                break;
-            case "noodle":
-                title = "カップ麺";
-                break;
-            case "coffee":
-                title = "コーヒー＆紅茶";
-                break;
-            case "others":
-                title = "その他";
-                break;
-            default:
-                title = "";
-        }
-        return title;
+        itemDatabaseHelper.getDataAndUpdateRecyclerView();
     }
 
     public String getGenre() {

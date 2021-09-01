@@ -44,12 +44,9 @@ public class MyPageActivity extends AppCompatActivity {
         });
         */
 
-        /* ログアウトに遷移
+        // ログアウトに遷移
         Button mlBtn = findViewById(R.id.mv_logout_btn);
-        mlBtn.setOnClickListener(v-> {
-            Intent intent = new Intent(getApplication(), .class);
-            startActivity(intent);
-        });
-         */
+        mlBtn.setOnClickListener(v -> finish());
+
     }
 }

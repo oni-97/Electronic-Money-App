@@ -18,4 +18,9 @@
     <string name="purchase_history">購入履歴</string>
     <string name="setting">設定</string>
     <string name="register_item_for_juicekai">商品登録\n（ジュース会担当用）</string>
+
+    <!-- purchase_by_genre_activity -->
+    <string name="price_sort_low">価格(安い順)</string>
+    <string name="price_sort_high">価格(高い順)</string>
+    <string name="price_sort_alpha">アルファベット順</string>
 </resources>

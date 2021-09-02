@@ -15,6 +15,8 @@ import java.util.List;
 public class PurchaseByGenreActivity extends AppCompatActivity {
     private String genre;
     private RecyclerView recyclerView;
+    private String sortBy = "alpha";
+    private ItemDatabaseHelper itemDatabaseHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,23 @@ public class PurchaseByGenreActivity extends AppCompatActivity {
         Button returnButton = findViewById(R.id.return_btn);
         returnButton.setOnClickListener(v -> finish());
 
+        // 各種ソートボタン
+        Button sortHigherPriceBtn = findViewById(R.id.sort_higher_price_btn);
+        sortHigherPriceBtn.setOnClickListener(v-> {
+            sortBy = "higher_price";
+            itemDatabaseHelper.getDataAndUpdateRecyclerView(sortBy);
+        });
+        Button sortLowerPriceBtn = findViewById(R.id.sort_lower_price_btn);
+        sortLowerPriceBtn.setOnClickListener(v-> {
+            sortBy = "lower_price";
+            itemDatabaseHelper.getDataAndUpdateRecyclerView(sortBy);
+        });
+        Button sortAlphaBtn = findViewById(R.id.sort_alpha_btn);
+        sortAlphaBtn.setOnClickListener(v-> {
+            sortBy = "alpha";
+            itemDatabaseHelper.getDataAndUpdateRecyclerView(sortBy);
+        });
+
         //RecyclerViewの設定
         recyclerView = findViewById(R.id.item_rview);
         recyclerView.setHasFixedSize(true);
@@ -39,8 +58,8 @@ public class PurchaseByGenreActivity extends AppCompatActivity {
         RecyclerView.LayoutManager rLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(rLayoutManager);
 
-        ItemDatabaseHelper itemDatabaseHelper = new ItemDatabaseHelper(getApplicationContext(), this);
-        itemDatabaseHelper.getDataAndUpdateRecyclerView();
+        itemDatabaseHelper = new ItemDatabaseHelper(getApplicationContext(), this);
+        itemDatabaseHelper.getDataAndUpdateRecyclerView(sortBy);
     }
 
     public String getGenre() {

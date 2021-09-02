@@ -23,7 +23,7 @@ public class ItemDatabaseHelper extends AppCompatActivity {
         this.pbgActivity = activity;
     }
 
-    public void getDataAndUpdateRecyclerView() {
+    public void getDataAndUpdateRecyclerView(String sortBy) {
         isGetDataSuccess = false;
         ExecutorService executor = Executors.newSingleThreadExecutor();
         //データベース関連は非同期処理で行う
@@ -31,6 +31,22 @@ public class ItemDatabaseHelper extends AppCompatActivity {
             @Override
             public void run() {
                 try {
+                    switch (sortBy) {
+                        case "alpha":
+                            itemDataList =
+                                    iDao.loadItemsMatchingGenreOrderByItemNameASC(pbgActivity.getGenre());
+                        case "lower_price" :
+                            itemDataList =
+                                    iDao.loadItemsMatchingGenreOrderByItemPriceASC(pbgActivity.getGenre());
+                            break;
+                        case "higher_price" :
+                            itemDataList =
+                                    iDao.loadItemsMatchingGenreOrderByItemPriceDESC(pbgActivity.getGenre());
+                            break;
+                        default:
+                            itemDataList =
+                                    iDao.loadItemsMatchingGenreOrderByItemNameASC(pbgActivity.getGenre());
+                    }
                     itemDataList = iDao.loadItemsMatchingGenreOrderByItemNameASC(pbgActivity.getGenre());
                     isGetDataSuccess = true;
                 } catch (Exception e) {

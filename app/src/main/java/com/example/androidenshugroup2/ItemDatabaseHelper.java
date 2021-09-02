@@ -35,6 +35,7 @@ public class ItemDatabaseHelper extends AppCompatActivity {
                         case "alpha":
                             itemDataList =
                                     iDao.loadItemsMatchingGenreOrderByItemNameASC(pbgActivity.getGenre());
+                            break;
                         case "lower_price" :
                             itemDataList =
                                     iDao.loadItemsMatchingGenreOrderByItemPriceASC(pbgActivity.getGenre());
@@ -43,11 +44,7 @@ public class ItemDatabaseHelper extends AppCompatActivity {
                             itemDataList =
                                     iDao.loadItemsMatchingGenreOrderByItemPriceDESC(pbgActivity.getGenre());
                             break;
-                        default:
-                            itemDataList =
-                                    iDao.loadItemsMatchingGenreOrderByItemNameASC(pbgActivity.getGenre());
                     }
-                    itemDataList = iDao.loadItemsMatchingGenreOrderByItemNameASC(pbgActivity.getGenre());
                     isGetDataSuccess = true;
                 } catch (Exception e) {
                 }

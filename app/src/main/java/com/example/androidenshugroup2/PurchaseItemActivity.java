@@ -14,11 +14,17 @@ public class PurchaseItemActivity extends AppCompatActivity {
 
     public static final String EXTRA_MESSAGE
             = "com.example.androidenshugroup2.MESSAGE";
+    private String userName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.purchase_item_activity);
+
+        //遷移元のアクティビティから「ジャンル (String型)」を受け取る。
+        //タイトルをジャンルに応じて設定
+        Intent intentMain = getIntent();
+        userName = intentMain.getStringExtra(MainActivity.USER_NAME);
 
         //「戻る」ボタン
         Button returnBtn = findViewById(R.id.return_btn);
@@ -44,6 +50,7 @@ public class PurchaseItemActivity extends AppCompatActivity {
         //遷移先のアクティビティに「ジャンル (String型)」を渡す
         Intent intent = new Intent(getApplication(), PurchaseByGenreActivity.class);
         intent.putExtra(EXTRA_MESSAGE, genre);
+        intent.putExtra(MainActivity.USER_NAME, userName);
         mStartForResult.launch(intent);
     }
 

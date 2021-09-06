@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.androidenshugroup2;
 
 public class St {
     private int id;

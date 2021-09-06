@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.androidenshugroup2;
 
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;

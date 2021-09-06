@@ -1,3 +1,4 @@
+<!--<<<<<<< HEAD-->
 <resources>
     <string name="app_name">AndroidEnshuGroup2</string>
     <string name="regiPageButtonJuice">ジュース</string>
@@ -27,4 +28,30 @@
     <string name="itemEditGenreTextView">ジャンルを選択してください</string>
     <string name="itemEditBackButton">戻る</string>
     <string name="itemEditOKButton">登録</string>
+=======
+<!--<resources>-->
+
+    <!-- purchase_item_activity -->
+    <string name="purchase_item_activity_name">商品購入</string>
+    <string name="juice">ジュース</string>
+    <string name="snack">お菓子</string>
+    <string name="ice">アイス</string>
+    <string name="noodle">カップ麺</string>
+    <string name="coffee_tea">コーヒー＆紅茶</string>
+    <string name="others">その他</string>
+    <string name="return_txt">戻る</string>
+
+    <!-- my_page_activity -->
+    <string name="my_page_activity_name">マイページ</string>
+    <string name="purchase_item">商品購入</string>
+    <string name="logout">ログアウト</string>
+    <string name="purchase_history">購入履歴</string>
+    <string name="setting">設定</string>
+    <string name="register_item_for_juicekai">商品登録\n（ジュース会担当用）</string>
+
+    <!-- purchase_by_genre_activity -->
+    <string name="price_sort_low">価格(安い順)</string>
+    <string name="price_sort_high">価格(高い順)</string>
+    <string name="price_sort_alpha">アルファベット順</string>
+>>>>>>> 41c76324bfee01b5c9f3596479bd983f7704168e
 </resources>

@@ -48,7 +48,6 @@ public class ItemActionChoose extends AppCompatActivity {
         buttonback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //finish();
                 Intent intent = new Intent();
                 setResult(Activity.RESULT_OK,intent);
                 finish();
@@ -58,7 +57,6 @@ public class ItemActionChoose extends AppCompatActivity {
         buttonDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                deleteCheckPopUp(db,itemData,position,itemCount);
                 deleteCheckPopUp(db,itemData);
             }
         });
@@ -71,7 +69,6 @@ public class ItemActionChoose extends AppCompatActivity {
                 intent.putExtra("position",position);
                 intent.putExtra("ItemCount",itemCount);
                 startActivityForResult(intent,100);
-                //startActivity();
                 new setItemData(db,id,itemNameText,itemPriceText).execute();
             }
         });

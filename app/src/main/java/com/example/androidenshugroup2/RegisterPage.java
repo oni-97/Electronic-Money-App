@@ -29,7 +29,7 @@ public class RegisterPage extends AppCompatActivity {
         buttonOther = findViewById(R.id.buttonOther);
         buttonRegiBack = findViewById(R.id.buttonRegiBack);
         buttonNewRegi = findViewById(R.id.buttonNewRegi);
-        /*遷移 juice->1,snack->2,ice->3,noodle->4,coffee->5,other->6*/
+
         buttonJuice.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplication(), ItemEditView.class);

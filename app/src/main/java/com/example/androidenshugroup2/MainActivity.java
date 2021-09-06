@@ -21,7 +21,7 @@ import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
     public static final String USER_NAME
-            = "com.example.testactivitytrasdata.USERNAME";
+            = "com.example.androidenshugroup2.USERNAME";
 
     @BindView(R.id.editText)
     EditText editText;

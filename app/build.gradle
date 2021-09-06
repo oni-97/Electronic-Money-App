@@ -43,4 +43,7 @@ dependencies {
 
     //for ThreeTenABP
     implementation 'com.jakewharton.threetenabp:threetenabp:1.2.1'
+
+    // optional - Paging 3 Integration
+    implementation "androidx.room:room-paging:2.4.0-alpha04"
 }

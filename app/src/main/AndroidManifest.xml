@@ -11,6 +11,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidEnshuGroup2">
         <activity
+            android:name=".ItemEdit"
+            android:exported="true" />
+        <activity
+            android:name=".ItemActionChoose"
+            android:exported="true" />
+        <activity
+            android:name=".ItemEditView"
+            android:exported="true" />
+        <activity
+            android:name=".RegiNewItem"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterPage"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

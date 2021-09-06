@@ -5,21 +5,22 @@ import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = "item_data")
-public class ItemData {
+public class ItemData {/*private -> public */
     @PrimaryKey(autoGenerate = true)
-    private int id;
+    public int id;
 
     @ColumnInfo(name = "genre")
-    private String genre;
+    public String genre;
 
     @ColumnInfo(name = "item_name")
-    private String itemName;
+    public String itemName;
 
     @ColumnInfo(name = "item_price")
-    private int itemPrice;
+    public int itemPrice;
 
     // id = 0 にすれば自動でidが割り当てられる
-    public ItemData(int id, String genre, String itemName, int itemPrice) {
+    /*引数変更したよ*/
+    public ItemData(int id,String genre,String itemName,int itemPrice) {
         this.id = id;
         this.genre = genre;
         this.itemName = itemName;
@@ -41,4 +42,10 @@ public class ItemData {
     public int getItemPrice() {
         return itemPrice;
     }
+
+    public ItemData update(String itemName){
+        this.itemName = itemName;
+        return this;
+    }
+
 }

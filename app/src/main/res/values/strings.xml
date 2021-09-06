@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">AndroidEnshuGroup2</string>
+    <string name="regiPageButtonJuice">ジュース</string>
+    <string name="regiPageButtonSnack">お菓子</string>
+    <string name="regiPageButtonIce">アイス</string>
+    <string name="regiPageButtonNoodle">カップ麺</string>
+    <string name="regiPageButtonCoffee">コーヒー</string>
+    <string name="regiPageButtonOther">その他</string>
+    <string name="regiPageButtonRegiBack">戻る</string>
+    <string name="regiPageButtonNewRegi">新規登録</string>
+    <string name="regiPageButtonRegiBack2">戻る</string>
+    <string name="regiPageButtonNewRegi2">登録</string>
+    <string name="regiPageButtonnewregi">新規登録</string>
+    <string name="itemNameTextView">商品名を入力してください</string>
+    <string name="itemNameText">商品名を入力</string>
+    <string name="itemPriceTextView">価格を入力してください</string>
+    <string name="itemPriceText">価格を入力</string>
+    <string name="itemGenreTextView">ジャンルを選択してください</string>
+    <string name="itemRegiTextView">商品登録</string>
+    <string name="genreTextView">ジャンル</string>
+    <string name="buttonItemEditBack">戻る</string>
+    <string name="buttonChooseActionBack">戻る</string>
+    <string name="buttonDeleteItem">商品削除</string>
+    <string name="buttonEditItem">商品内容変更</string>
+    <string name="itemEditNameTextView">商品名を入力してください</string>
+    <string name="itemEditPriceTextView">価格を入力してください</string>
+    <string name="itemEditGenreTextView">ジャンルを選択してください</string>
+    <string name="itemEditBackButton">戻る</string>
+    <string name="itemEditOKButton">登録</string>
 </resources>

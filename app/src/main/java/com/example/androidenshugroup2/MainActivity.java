@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.androidenshugroup2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -20,6 +20,8 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
+    public static final String USER_NAME
+            = "com.example.testactivitytrasdata.USERNAME";
 
     @BindView(R.id.editText)
     EditText editText;

@@ -59,17 +59,9 @@ public class ItemRecyclerAdapter extends RecyclerView.Adapter<ItemDataRecycleVie
     }
 
     private PurchaseData makePurchaseData(ItemData itemData) {
-        // userNameの取得はどうするか
-        //とりあえず 1～3 からランダムに選ぶ
-        //修正必要
-        String userName;
-        if (Math.random() < 0.33) userName = "ichiro";
-        else if (Math.random() < 0.5) userName = "jiro";
-        else userName = "saburo";
-
         LocalDateTime localDateTime = LocalDateTime.now();
         PurchaseData purchaseData =
-                new PurchaseData(0, userName, itemData.getItemName(), itemData.getItemPrice(), localDateTime);
+                new PurchaseData(0, this.activity.getUserName(), itemData.getItemName(), itemData.getItemPrice(), localDateTime);
         return purchaseData;
     }
 

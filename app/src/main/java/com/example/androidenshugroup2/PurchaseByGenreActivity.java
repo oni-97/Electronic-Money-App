@@ -17,6 +17,7 @@ public class PurchaseByGenreActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private String sortBy = "alpha";
     private ItemDatabaseHelper itemDatabaseHelper;
+    private String userName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,7 @@ public class PurchaseByGenreActivity extends AppCompatActivity {
         //タイトルをジャンルに応じて設定
         Intent intentMain = getIntent();
         genre = intentMain.getStringExtra(PurchaseItemActivity.EXTRA_MESSAGE);
+        userName = intentMain.getStringExtra(MainActivity.USER_NAME);
         setTitle("商品購入 > " + genre);
 
         //「戻る」ボタン
@@ -80,5 +82,9 @@ public class PurchaseByGenreActivity extends AppCompatActivity {
         intent.putExtra(PurchaseItemActivity.EXTRA_MESSAGE, "purchase_complete");
         setResult(RESULT_OK, intent);
         this.finish();
+    }
+
+    public String getUserName(){
+        return this.userName;
     }
 }

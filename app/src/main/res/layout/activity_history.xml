@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fee"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/purchase_history"
+        android:text="購入履歴"
+        android:textSize="30sp"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/last_month_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="前月"
+        app:layout_constraintTop_toBottomOf="@id/purchase_history"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/this_month_button" />
+
+    <Button
+        android:id="@+id/this_month_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="今月"
+        app:layout_constraintTop_toBottomOf="@id/purchase_history"
+        app:layout_constraintLeft_toRightOf="@id/last_month_button"
+        app:layout_constraintRight_toLeftOf="@id/return_button" />
+
+    <Button
+        android:id="@+id/return_button"
+        android:text="戻る"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/purchase_history"
+        app:layout_constraintLeft_toRightOf="@id/this_month_button"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"
+        android:id="@+id/scrollView">
+
+        <TextView
+            android:id="@+id/history_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/last_month_button" />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

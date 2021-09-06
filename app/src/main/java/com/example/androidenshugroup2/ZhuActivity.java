@@ -1,9 +1,8 @@
-package com.example.myapplication;
+package com.example.androidenshugroup2;
 
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
@@ -29,14 +28,14 @@ public class ZhuActivity extends AppCompatActivity {
     RelativeLayout activityZhu;
     public static final String REGEX_PASSWORD = "^[a-zA-Z0-9]{6,16}$";//验证密码是否有特殊符号或长度不满6位
     private SQLiteDatabase sdb;
-    private Mysqlist mys;
+    private com.example.androidenshugroup2.Mysqlist mys;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_zhu);
         ButterKnife.bind(this);
-        mys = new Mysqlist(this, "zhu_c", null, 1);//使用helper创建数据库
+        mys = new com.example.androidenshugroup2.Mysqlist(this, "zhu_c", null, 1);//使用helper创建数据库
         sdb=mys.getWritableDatabase();
     }
 

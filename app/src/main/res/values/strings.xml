@@ -1,4 +1,3 @@
-<!--<<<<<<< HEAD-->
 <resources>
     <string name="app_name">AndroidEnshuGroup2</string>
     <string name="regiPageButtonJuice">ジュース</string>
@@ -28,8 +27,6 @@
     <string name="itemEditGenreTextView">ジャンルを選択してください</string>
     <string name="itemEditBackButton">戻る</string>
     <string name="itemEditOKButton">登録</string>
-=======
-<!--<resources>-->
 
     <!-- purchase_item_activity -->
     <string name="purchase_item_activity_name">商品購入</string>
@@ -53,5 +50,4 @@
     <string name="price_sort_low">価格(安い順)</string>
     <string name="price_sort_high">価格(高い順)</string>
     <string name="price_sort_alpha">アルファベット順</string>
->>>>>>> 41c76324bfee01b5c9f3596479bd983f7704168e
 </resources>

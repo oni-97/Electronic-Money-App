@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -74,9 +75,7 @@ public class HistoryActivity extends AppCompatActivity {
 
         @Override
         protected Integer doInBackground(Void... params) {
-            // デバッグ用
             PurchaseDao purchaseDao = db.purchaseDao();
-            purchaseDao.insert(new PurchaseData(0, "da-hayas", "ジュースA", 50, LocalDateTime.now()));
 
             // 履歴出力
             sb = new StringBuilder();

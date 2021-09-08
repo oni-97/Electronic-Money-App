@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-        mys = new Mysqlist(this, "register", null, 1);//使用helper创建数据库
+        mys = new Mysqlist(this, "zhu_c", null, 1);//使用helper创建数据库
         r=mys.getReadableDatabase();
         w=mys.getWritableDatabase();
         mdata=new ArrayList<St>();

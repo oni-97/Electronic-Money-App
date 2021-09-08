@@ -36,7 +36,7 @@ public class MyPageActivity extends AppCompatActivity {
         });
 
         // 商品登録に遷移
-        Button mriBtn = findViewById(R.id.mv_register_item_btn);
+        Button mriBtn = findViewById(R.id.buttonCoffee);
         mriBtn.setOnClickListener(v-> {
             Intent intent = new Intent(getApplication(), RegisterPage.class);
             startActivity(intent);

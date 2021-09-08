@@ -32,7 +32,7 @@ public class PurchaseByGenreActivity extends AppCompatActivity {
         setTitle("商品購入 > " + genre);
 
         //「戻る」ボタン
-        Button returnButton = findViewById(R.id.return_btn);
+        Button returnButton = findViewById(R.id.buttonRegiBack);
         returnButton.setOnClickListener(v -> finish());
 
         // 各種ソートボタン

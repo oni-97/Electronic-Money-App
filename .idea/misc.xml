@@ -15,11 +15,13 @@
         <entry key="app/src/main/res/layout/activity_item_recycler_adapter.xml" value="0.23007246376811594" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.23007246376811594" />
         <entry key="app/src/main/res/layout/activity_regi_new_item.xml" value="0.335" />
-        <entry key="app/src/main/res/layout/activity_register_page.xml" value="0.21331521739130435" />
+        <entry key="app/src/main/res/layout/activity_register_page.xml" value="0.23388364779874213" />
         <entry key="app/src/main/res/layout/activity_zhu.xml" value="0.16770833333333332" />
         <entry key="app/src/main/res/layout/item_data.xml" value="0.16770833333333332" />
+        <entry key="app/src/main/res/layout/my_page_activity.xml" value="0.22826086956521738" />
         <entry key="app/src/main/res/layout/my_text_view.xml" value="0.335" />
         <entry key="app/src/main/res/layout/purchase_by_genre_activity.xml" value="0.16770833333333332" />
+        <entry key="app/src/main/res/layout/purchase_item_activity.xml" value="0.22826086956521738" />
       </map>
     </option>
   </component>

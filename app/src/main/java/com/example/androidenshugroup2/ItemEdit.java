@@ -15,7 +15,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.TextView.BufferType;
 
 public class ItemEdit extends AppCompatActivity {
     public TextView itemNameTextView;
@@ -41,14 +40,14 @@ public class ItemEdit extends AppCompatActivity {
         id = intent.getIntExtra("ID", 0);
         position = intent.getIntExtra("position",0);
         itemCount = intent.getIntExtra("ItemCount",0);
-        itemNameTextView = findViewById(R.id.itemEditNameTextView);
-        itemNameText =findViewById(R.id.itemEditNameText);
-        itemPriceTextView=findViewById(R.id.itemEditPriceTextView);
-        itemPriceText =  findViewById(R.id.itemEditPriceText);
-        itemGenreTextView = findViewById(R.id.itemEditGenreTextView);
-        Spinner genreSpinner = findViewById(R.id.itemEditGenrespinner);
-        buttonBack = findViewById(R.id.itemEditBackButton);
-        buttonOK = findViewById(R.id.itemEditOKButton);
+        itemNameTextView = findViewById(R.id.textView2);
+        itemNameText =findViewById(R.id.itemNameText);
+        itemPriceTextView=findViewById(R.id.textView3);
+        itemPriceText =  findViewById(R.id.itemPriceText);
+        itemGenreTextView = findViewById(R.id.textView4);
+        Spinner genreSpinner = findViewById(R.id.genreSpinner);
+        buttonBack = findViewById(R.id.buttonRegiBack2);
+        buttonOK = findViewById(R.id.buttonNewRegi2);
         ItemDatabase db = ItemDatabaseSingleton.getInstance(getApplicationContext());
         ArrayAdapter<String> adapter
                 = new ArrayAdapter<>(this,

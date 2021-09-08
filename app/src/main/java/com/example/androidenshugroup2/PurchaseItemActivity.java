@@ -27,21 +27,21 @@ public class PurchaseItemActivity extends AppCompatActivity {
         userName = intentMain.getStringExtra(MainActivity.USER_NAME);
 
         //「戻る」ボタン
-        Button returnBtn = findViewById(R.id.return_btn);
+        Button returnBtn = findViewById(R.id.buttonRegiBack);
         returnBtn.setOnClickListener(v -> finish());
 
         //「ジャンル」ボタン
-        Button juiceBtn = findViewById(R.id.juice_btn);
+        Button juiceBtn = findViewById(R.id.buttonJuice);
         juiceBtn.setOnClickListener(v -> moveToClickedGenre("ジュース"));
-        Button snackBtn = findViewById(R.id.snack_btn);
+        Button snackBtn = findViewById(R.id.buttonSnack);
         snackBtn.setOnClickListener(v -> moveToClickedGenre("お菓子"));
-        Button iceBtn = findViewById(R.id.ice_btn);
+        Button iceBtn = findViewById(R.id.buttonIce);
         iceBtn.setOnClickListener(v -> moveToClickedGenre("アイス"));
-        Button noodleBtn = findViewById(R.id.noodle_btn);
+        Button noodleBtn = findViewById(R.id.buttonNoodle);
         noodleBtn.setOnClickListener(v -> moveToClickedGenre("カップ麺"));
-        Button coffeeBtn = findViewById(R.id.mv_register_item_btn);
+        Button coffeeBtn = findViewById(R.id.buttonCoffee);
         coffeeBtn.setOnClickListener(v -> moveToClickedGenre("コーヒー"));
-        Button othersBtn = findViewById(R.id.others_btn);
+        Button othersBtn = findViewById(R.id.buttonOther);
         othersBtn.setOnClickListener(v -> moveToClickedGenre("その他"));
     }
 

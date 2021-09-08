@@ -1,15 +1,16 @@
 package com.example.androidenshugroup2;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,11 +36,12 @@ public class ItemEditView extends AppCompatActivity {
         genreTextView = findViewById(R.id.genreTextView);
         genreTextView.setText(genre);
         buttonItemEditBack = findViewById(R.id.buttonItemEditBack);
-
         LinearLayoutManager llm = new LinearLayoutManager(this);
         rv.setHasFixedSize(true);
-//        rv.addItemDecoration(new EditItemDecoration(this));//add
         rv.setLayoutManager(llm);
+        RecyclerView.ItemDecoration itemDecoration =
+                new DividerItemDecoration(this, DividerItemDecoration.VERTICAL);
+        rv.addItemDecoration(itemDecoration);
         new ItemEditView.getDB(db, genre).execute();
         /*戻るボタン*/
         buttonItemEditBack.setOnClickListener(new View.OnClickListener() {

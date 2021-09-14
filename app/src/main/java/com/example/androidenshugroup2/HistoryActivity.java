@@ -83,7 +83,7 @@ public class HistoryActivity extends AppCompatActivity {
             List<PurchaseData> atList = purchaseDao.getAll();
 
             for (PurchaseData at: atList) {
-                if((userName == at.getUserName()) && (at.getPurchaseDateTime().getMonth() == LocalDateTime.now().getMonth())){
+                if((userName.equals(at.getUserName())) && (at.getPurchaseDateTime().getMonth() == LocalDateTime.now().getMonth())){
                     sb.append(at.getPurchaseDateTime()).append("\t");
                     sb.append(at.getItemName()).append("\t");
                     sb.append("￥").append(at.getPurchasePrice()).append("\n");

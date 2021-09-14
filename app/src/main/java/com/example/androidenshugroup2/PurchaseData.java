@@ -23,12 +23,17 @@ public class PurchaseData {
     @ColumnInfo(name = "purchase_date_time")
     private LocalDateTime purchaseDateTime;
 
+    @ColumnInfo(name = "item_genre")
+    private String itemGenre;
+
+
     // id = 0 にすれば自動でidが割り当てられる
-    public PurchaseData(int id, String userName, String itemName, int purchasePrice, LocalDateTime purchaseDateTime) {
+    public PurchaseData(int id, String userName, String itemName, int purchasePrice, LocalDateTime purchaseDateTime, String itemGenre) {
         this.userName = userName;
         this.itemName = itemName;
         this.purchasePrice = purchasePrice;
         this.purchaseDateTime = purchaseDateTime;
+        this.itemGenre = itemGenre;
     }
 
     public int getId() {
@@ -49,5 +54,9 @@ public class PurchaseData {
 
     public LocalDateTime getPurchaseDateTime() {
         return purchaseDateTime;
+    }
+
+    public String getItemGenre() {
+        return itemGenre;
     }
 }

@@ -61,7 +61,7 @@ public class ItemRecyclerAdapter extends RecyclerView.Adapter<ItemDataRecycleVie
     private PurchaseData makePurchaseData(ItemData itemData) {
         LocalDateTime localDateTime = LocalDateTime.now();
         PurchaseData purchaseData =
-                new PurchaseData(0, this.activity.getUserName(), itemData.getItemName(), itemData.getItemPrice(), localDateTime);
+                new PurchaseData(0, this.activity.getUserName(), itemData.getItemName(), itemData.getItemPrice(), localDateTime, activity.getGenre());
         return purchaseData;
     }
 

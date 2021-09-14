@@ -69,7 +69,7 @@ public class PurchaseDatabaseHelper extends AppCompatActivity {
     public void purchaseFailDialog(PurchaseData data) {
         new AlertDialog.Builder(pbgActivity)
                 .setTitle("購入失敗")
-                .setMessage(data.getItemName() + " " + data.getPurchasePrice() + " "
+                .setMessage(data.getItemName() + " " + data.getPurchasePrice() + " 円"
                         + "の購入に失敗しました。もう一度お試しください。")
                 .setPositiveButton("OK", null)
                 .show();

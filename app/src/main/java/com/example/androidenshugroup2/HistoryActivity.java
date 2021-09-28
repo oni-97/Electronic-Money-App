@@ -120,7 +120,7 @@ public class HistoryActivity extends AppCompatActivity {
                         && (at.getPurchaseDateTime().getYear() == LocalDateTime.now().getYear())){
                     list.add(at);
 
-                    if(at.getItemGenre() == "コーヒー"){
+                    if("コーヒー".equals(at.getItemGenre())){
                         sumOfCoffee += at.getPurchasePrice();
                     } else {
                         sumOfOthers += at.getPurchasePrice();
@@ -180,7 +180,7 @@ public class HistoryActivity extends AppCompatActivity {
                         && (at.getPurchaseDateTime().getYear() == LocalDateTime.now().minusYears(1).getYear())))){
                     list.add(at);
 
-                    if(at.getItemGenre() == "コーヒー"){
+                    if("コーヒー".equals(at.getItemGenre())){
                         sumOfCoffee += at.getPurchasePrice();
                     } else {
                         sumOfOthers += at.getPurchasePrice();

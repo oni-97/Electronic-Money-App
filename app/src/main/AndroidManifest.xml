@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.androidenshugroup2">
+    package="com.inoueken.androidenshugroup2">
 
     <application
-        android:name=".MyApplication"
+        android:name="com.inoueken.androidenshugroup2.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -11,22 +11,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidEnshuGroup2">
         <activity
-            android:name=".ItemEdit"
+            android:name="com.inoueken.androidenshugroup2.ItemEdit"
             android:exported="true" />
         <activity
-            android:name=".ItemActionChoose"
+            android:name="com.inoueken.androidenshugroup2.ItemActionChoose"
             android:exported="true" />
         <activity
-            android:name=".ItemEditView"
+            android:name="com.inoueken.androidenshugroup2.ItemEditView"
             android:exported="true" />
         <activity
-            android:name=".RegiNewItem"
+            android:name="com.inoueken.androidenshugroup2.RegiNewItem"
             android:exported="true" />
         <activity
-            android:name=".RegisterPage"
+            android:name="com.inoueken.androidenshugroup2.RegisterPage"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.inoueken.androidenshugroup2.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,17 +35,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.androidenshugroup2.ZhuActivity"
+            android:name="com.inoueken.androidenshugroup2.ZhuActivity"
             android:label="@string/app_name" />
         <activity
-            android:name="com.example.androidenshugroup2.PurchaseItemActivity"
+            android:name="com.inoueken.androidenshugroup2.PurchaseItemActivity"
             android:label="@string/purchase_item_activity_name" />
-        <activity android:name="com.example.androidenshugroup2.PurchaseByGenreActivity" />
+        <activity android:name="com.inoueken.androidenshugroup2.PurchaseByGenreActivity" />
         <activity
-            android:name="com.example.androidenshugroup2.MyPageActivity"
+            android:name="com.inoueken.androidenshugroup2.MyPageActivity"
             android:label="@string/my_page_activity_name" />
         <activity
-            android:name=".HistoryActivity"
+            android:name="com.inoueken.androidenshugroup2.HistoryActivity"
             android:label="@string/app_name" />
     </application>
 </manifest>

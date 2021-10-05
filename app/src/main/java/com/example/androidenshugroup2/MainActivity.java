@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     Button button2;
     @BindView(R.id.activity_main)
     RelativeLayout activityMain;
-    public static final String REGEX_PASSWORD = "^[a-zA-Z0-9]{6,16}$";//验证密码是否有特殊符号或长度不满6位
+    public static final String REGEX_PASSWORD = "^[a-zA-Z0-9]{6,16}$";//特殊パスワードけんさ
     private SQLiteDatabase w;
     private SQLiteDatabase r;
     private Mysqlist mys;
@@ -66,8 +66,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.button:
                 String name1 = editText.getText().toString().trim();
                 String pass1 = editText2.getText().toString().trim();
-                if (name1.equals(name)&&pass1.equals(pass)){
-
+                if (login(name1,pass1)){
                     Toast.makeText(this,"ログインできました",Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(this, MyPageActivity.class);
                     intent.putExtra(USER_NAME,name);
@@ -77,9 +76,21 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
             case R.id.button2:
-                Intent intent1 = new Intent(MainActivity.this, ZhuActivity.class);
+                Intent intent1 = new Intent(this, ZhuActivity.class);
                 startActivity(intent1);
                 break;
         }
+    }
+
+    public boolean login(String username,String password){
+        SQLiteDatabase db= mys.getWritableDatabase();
+        String Query = "Select * from user_mo where name =? and pass =? ";
+        Cursor cursor = db.rawQuery(Query,new String[] {username,password});
+        if (cursor.getCount()>0){
+            cursor.close();
+            return  true;
+        }
+        cursor.close();
+        return false;
     }
 }

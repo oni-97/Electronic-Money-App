@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AndroidEnshuGroup2</string>
+    <string name="app_name">ElectronicMoneyApp</string>
     <string name="regiPageButtonJuice">ジュース</string>
     <string name="regiPageButtonSnack">お菓子</string>
     <string name="regiPageButtonIce">アイス</string>
@@ -44,7 +44,7 @@
     <string name="logout">ログアウト</string>
     <string name="purchase_history">購入履歴</string>
     <string name="setting">設定</string>
-    <string name="register_item_for_juicekai">商品登録\n（ジュース会担当用）</string>
+    <string name="register_item_for_juicekai">商品登録</string>
 
     <!-- purchase_by_genre_activity -->
     <string name="price_sort_low">価格(安い順)</string>
@@ -54,4 +54,7 @@
     <!-- purchase_by_genre_activity -->
     <string name="this_month">今月</string>
     <string name="last_month">先月</string>
+    <string name="login">ログイン</string>
+    <string name="register_item">商品登録</string>
+    <string name="register_user">新規登録</string>
 </resources>

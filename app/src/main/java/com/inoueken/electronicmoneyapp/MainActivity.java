@@ -71,6 +71,8 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(this, MyPageActivity.class);
                     intent.putExtra(USER_NAME,name);
                     startActivity(intent);
+                    editText.setText("");
+                    editText2.setText("");
                 }else{
                     Toast.makeText(this,"入力されたIdまたはパスワードを認証できませんでした",Toast.LENGTH_SHORT).show();
                 }

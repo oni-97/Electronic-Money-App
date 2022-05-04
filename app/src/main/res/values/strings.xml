@@ -49,7 +49,7 @@
     <!-- purchase_by_genre_activity -->
     <string name="price_sort_low">価格(安い順)</string>
     <string name="price_sort_high">価格(高い順)</string>
-    <string name="price_sort_alpha">アルファベット順</string>
+    <string name="price_sort_alpha">ABC順</string>
 
     <!-- purchase_by_genre_activity -->
     <string name="this_month">今月</string>
